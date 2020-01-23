@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Persona } from './interface/persona';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Formularios';
+  personita: Persona = {nombre: '', apellidos: '', poblacion: ''};
+
+  submit(){
+
+    console.log(this.personita);
+  }
+
 }
